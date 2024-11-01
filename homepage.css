@@ -13,11 +13,11 @@ section{
 	
 }	 
 
-h1,h2,h3,h4,h5,h6 {font-family: 'Oswald', sans-serif;
+h1,h2,h3,h4,h5,h6 {font-family:sans-serif;
                    font-weight:500;}
 
 .container {
-    width: 80%;
+    width: 92%;
     padding-right: 15px;
     padding-left: 15px;
     margin:auto;
@@ -26,14 +26,16 @@ h1,h2,h3,h4,h5,h6 {font-family: 'Oswald', sans-serif;
 
 #homeSlider{ 
 	width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(traders-video.jpg);
+	height:75%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(..traders-video.jpg);
     background-size: cover;
     background-position: center;
 
 }
 .primaryWrapper {
-    width: 100%;
+    width: 91%;
     overflow: hidden;
+	margin-left:8%;
 }
 .logo {
    width: 150px;
@@ -41,38 +43,34 @@ h1,h2,h3,h4,h5,h6 {font-family: 'Oswald', sans-serif;
     margin-top: 10px;
 	margin-bottom:10px;
 }
-.sliderContant2ndP {
-    float: right;
-    width: 40%;
-    font-weight: 700;
-    line-height: 40px;
-    color: white;
-	margin-top:10%;
-	letter-spacing:2px;
-	font-family: arial;
-	}
+
+
 .sliderContant {
     color: white;
-    width: 60%;
+    width: 91%;
+	margin-left: 8%
 }
-.sliderContant h1 {
-    font-size: 50px;
+.sliderContant-Item{
+	font-family:sans-serif;
+    font-size: 116%;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+	width:325px;
+	overflow:hidden;
+	margin:20px;
+	margin-left:0;
+	margin-right: 0;
+	line-height:25px;
+}
+.sliderContant-Title{
+    font-size: 250%;
     font-weight: 500;
     text-transform: uppercase;
-    margin-bottom: 30px;
-    margin-top: 80px;
-    float: left;
-	width:80%;
 	letter-spacing:10px;
-    line-height:170%;
+    line-height:60px;
 }
-.sliderContant p {
-    font-weight: 700;
-    line-height: 200%;
-    width: 65%;
-    margin-bottom: 30px;
-	letter-spacing:2px;
-	font-family: arial;
+.sliderContant-Item p{
 	color: #8eed81;
 }
 
@@ -83,49 +81,424 @@ h1,h2,h3,h4,h5,h6 {font-family: 'Oswald', sans-serif;
 
 
 
-
 section#ourTeam {
     overflow: hidden;
+	padding-bottom:0px;
+}
+.teamContants{
+	width:80%;
+	max-width:1170Px;
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap:50px 30px;
+	text-align: center;
+    margin: auto;
+	
 }
 .teamImage {
-    width: 535px;
-    float: left;
+    overflow:hidden;
 }
 .teamImage img {
-    max-width: 100%;
+    width:100%;
+	height:100%;
+	object-fit:cover;
 }
 .teamDetails {
-    width: 535px;
-    float: right;
+   display:flex;
+   align-items:center;
+   
+}
+.titleDesc {
+	padding-left:20px;
 }
 .titleDesc h2 {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-.titleDesc p {
-    color: #666;
-    line-height: 25px;
-    margin-bottom: 15px;
+    font-size: 150%;
+    padding-bottom: 15px;
+	color:#328f13;
+	line-height:26px;
 }
 
+.titleDesc p {
+    color: #666;
+    font-size: 100%;
+    padding-bottom: 15px;
+	line-height:26px;
+}
+
+@media (max-width:991px){
+	.titleDesc {
+	padding-left:0;
+}
+}
+
+@media (max-width:760px){
+	.teamContants{
+	width:90%;
+	grid-template-columns:1fr;	
+}	    
+} 
+
+
+
+
+
+#YoutubeVideo{
+	overflow: hidden;
+	padding-bottom:0px;
+	padding-top: 20px;
+}
 .YTVTitle{
     width:100%;
     top:50%;
     text-align:center;
+	padding-bottom:20px;
 	
+}
+.YTVTitle h3 {
+	font-family:arial black;
+	font-size:40px;
+}
+.YTVTitle p {
+	font-family:arial black;
+	font-size:20px;
+	color:#328f13;
+}
+.YTVVideo-play{
+	margin:auto;
+	width:90%;
 }
 .YTVEndVideo{
     width:100%;	
     top:50%;
     text-align:center;
+	padding:20px;
+	padding-left: 0px;
+    padding-right: 0px;
+	
+}
+.YTVVideo-Player{
+	aspect-ratio: 16 / 9;
+	width:100%;
+}
+.YTVEndVideo h3{
+	font-family:arial black;
+	font-size:150%;	
+}
+.YTVEndVideo p{
+	font-family:arial black;
+	font-size:20px;
+	color:#328f13;
+}
+.YTVButton{
+	margin:auto;
+}
+.YTVButton a{
+	text-decoration:none;
+}
+.YTVButton button{
+	background: #328f13;
+    color: white;
+    padding: 14px;
+    text-align: center;
+    font-size: 120%;
+    display: block;
+    border-radius: 25px;
+    transition: 0.3s;
+	border:none;
+	margin:auto;
+	cursor:pointer;
+	font-weight:700;
+	padding-left:50px;
+	padding-right:50px;
+}
+
+.YTVButton button:hover{
+	background:black;
+	color:#328f13;
+
+}
+section#MEMECOIN{
+	overflow: hidden;
+	padding-bottom:0;
+	margin-bottom:0;
+}
+
+.MEMECOINTitle{
+	margin:auto;
+}
+.MEMECOINTitle h1{
+	text-align: center;
+    padding-bottom: 26px;
+    font-size: 200%;
+    font-weight: 400;
+}
+.MEMECOINTitle h3{
+	 padding-bottom: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.MEMECOINTitle p{
+	line-height: 25px;
+    font-family: sans-serif;
+    color: #605b5b;
+    padding-top: 20px;
+}
+.MEMECOINTitle2nd{
+	    text-align: center;
+    margin-top: 30px;
+}
+.MEMECOINTitle2nd h1{
+	    font-size: 250%;
+    font-weight: 300;
+	    color: #362f2f;
+    font-family: sans-serif;
+}
+}
+.MEMECOINTitle2nd p{
+	font-size: 20px;
+    color: #484545;
 	
 }
 
-.YTVButton{
+
+
+
+
+
+
+section#PreSell{
+	overflow: hidden;
+	padding-bottom:0;
+	margin-bottom:0;
+	    padding-top: 35px;
+}
+.PreSellImage{
+	width: 100%;
+}
+.PreSellImage img{
+	width: 100%;
+}
+.PreSellLowerTitle{
+	text-align: center;
+    padding: 20px;
+}
+.PreSellLowerTitle h1{
+	    font-weight: 500;
+    font-size: 200%;
+    font-family: sans-serif;
+}
+.PreSellButton{
 	margin:auto;
+}
+.PreSellButton button{
+	background: #328f13;
+    color: white;
+    padding: 14px;
+    text-align: center;
+    font-size: 120%;
+    display: block;
+    border-radius: 25px;
+    transition: 0.3s;
+	border:none;
+	margin:auto;
+	cursor:pointer;
+	font-weight:700;
+	padding-left:50px;
+	padding-right:50px;
+}
+.PreSellButton button:hover{
+	background:black;
+    color:#328f13;
+}
+.PreSellButton a{
+	text-decoration:none;
+}
+
+
+section#Referenzen{
+	margin:0;
+	padding:0;
+}
+.Referenzen-Title{
+	text-align:center;
+	font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(90, 237, 66);
+	margin-top:30px;
+}
+.Referenzen-Contant{
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	margin-top:30px;
+}
+.Referenzen-Contant-Item{
+	font-family: Roboto, sans-serif;
+    font-size: 116%;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(36, 36, 36);
+	width:325px;
+	overflow:hidden;
+	margin:20px;
+	margin-left:0;
+	line-height:25px;
+	text-align: center;
+}
+
+
+
+
+
+section#TokenRuck{
+	overflow: hidden;
+	padding-bottom:0;
+	margin-bottom:0;
+	padding-top:40px;
+}
+.TokenRuck{
+	
+}
+.TokenRuckContant{
+	
+}
+.TokenRuckContant p{
+    line-height: 25px;
+    font-family: sans-serif;
+    color: #605b5b;
+	padding-top: 15px;
+}
+.TokenRuckContant h3{
+	padding-top:20px;
+	padding-bottom: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.TokenRuckImage{
+	width: 100%;
+}
+.TokenRuckImage img{
+	width: 100%;
+}
+
+
+
+section#Passivoder{
+	overflow: hidden;
+	padding-bottom:0;
+	margin-bottom:0;
+}
+.PassivoderContant{
+	text-align:center;
+	
+}
+.PassivoderContant h1{
+	font-size: 250%;
+    font-weight: 300;
+	    color: #362f2f;
+    font-family: sans-serif;
+}
+.PassivoderContant p{
+		    font-size: 125%;
+    line-height: 38px;
+}
+.PassivoderContant2nd{
+	    padding-top: 25px;
+}
+.PassivoderContant2nd h3{
+	    font-size: 120%;
+    padding-bottom: 20px;
+}
+.PassivoderContant2nd p{
+	    line-height: 25px;
+    font-size: 100%;
+    word-spacing: 1px;
+}
+section#Community-Academy{
+	overflow: hidden;
+	padding-bottom:0;
+	margin-bottom:0;
+}
+.Community-Academy-Image {
+	    width: 100%;
+}
+.Community-Academy-Image img{
+	    width: 100%;
+}
+
+.Community-Academy-Contant{
+	    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.Community-Academy-Contant h1{
+	font-size: 300%;
+    font-weight: 300;
+    color: #2c2929;
+	font-family: sans-serif;
+    padding-bottom: 10px;
+}
+.Community-Academy-Contant p{
+	    font-size: 150%;
+    color: #322c2c;
+}
+
+section#Automatisierte{
+	overflow: hidden;
+	padding-bottom:0;
+	margin-bottom:0;
+}
+
+.Automatisierte-Contant{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.Automatisierte-Image{
+	width:100%;
+	position:relative;
+	
+}
+.Automatisierte-Image img{
+	width:100%;
+	display:block;
+	margin:auto;
+}
+.Automatisierte-Title{
+	width:100%;
+	height:100%;
+	position: absolute;
+    top: 0%;
+    left: 0%;
+	background:rgba(0,0,0,0.6);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	color:white;
+	font-size: 100%;
 	text-align:center;
 }
-.YTVButton{
-	
-	font-size:200px
+
+section#Disclaimer{
+	overflow: hidden;
+	padding-top:0;
+	margin-top:0;
+}
+.Disclaimer-Contant{
+	margin-top:0;
+	    font-family: sans-serif;
+}
+.Disclaimer-Contant h1{
+	text-align: center;
+    padding-bottom: 41px;
+	padding-top:10px;
+    font-size: 320%;
+	font-weight:300;
+	letter-spacing:4px;
+}
+.Disclaimer-Contant p{
+	line-height: 25px;
 }
