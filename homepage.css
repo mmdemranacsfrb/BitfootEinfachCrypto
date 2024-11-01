@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{margin:0px;
+  padding:0px;}
+  
+body{font-family: 'Work Sans', sans-serif;
+     font-size:16px;}
+
+section{
+	padding:80px 0px;
+	
+}	 
+
+h1,h2,h3,h4,h5,h6 {font-family: 'Oswald', sans-serif;
+                   font-weight:500;}
+
+.container {
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin:auto;
+}				  
+
+
+#homeSlider{ 
+	width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(traders-video.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.primaryWrapper {
+    width: 100%;
+    overflow: hidden;
+}
+.logo {
+   width: 150px;
+    float: left;
+    margin-top: 10px;
+	margin-bottom:10px;
+}
+.sliderContant2ndP {
+    float: right;
+    width: 40%;
+    font-weight: 700;
+    line-height: 40px;
+    color: white;
+	margin-top:10%;
+	letter-spacing:2px;
+	font-family: arial;
+	}
+.sliderContant {
+    color: white;
+    width: 60%;
+}
+.sliderContant h1 {
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    float: left;
+	width:80%;
+	letter-spacing:10px;
+    line-height:170%;
+}
+.sliderContant p {
+    font-weight: 700;
+    line-height: 200%;
+    width: 65%;
+    margin-bottom: 30px;
+	letter-spacing:2px;
+	font-family: arial;
+	color: #8eed81;
+}
+
+
+
+
+
+
+
+
+
+section#ourTeam {
+    overflow: hidden;
+}
+.teamImage {
+    width: 535px;
+    float: left;
+}
+.teamImage img {
+    max-width: 100%;
+}
+.teamDetails {
+    width: 535px;
+    float: right;
+}
+.titleDesc h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.titleDesc p {
+    color: #666;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.YTVTitle{
+    width:100%;
+    top:50%;
+    text-align:center;
+	
+}
+.YTVEndVideo{
+    width:100%;	
+    top:50%;
+    text-align:center;
+	
+}
+
+.YTVButton{
+	margin:auto;
+	text-align:center;
+}
+.YTVButton{
+	
+	font-size:200px
+}
